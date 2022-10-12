@@ -1,0 +1,121 @@
+body {
+    background-color:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 30vw;
+    padding: 1.5em;
+    height: 50vh;
+}
+
+.ball-1,
+.ball-2,
+.ball-3,
+.ball-4,
+.ball-5 {
+    width: 1.5%;
+  
+   
+    border-radius: 50%;
+    position: absolute;
+    top: 6vh;
+    display: block;
+}
+
+.ball-1::after{
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+
+.ball-2::after{
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+.ball-3::after{
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+.ball-4::after{
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+.ball-5::after{
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+.ball-1 {
+    left: 49vw;
+    background-color: red;
+    animation: bounce 2.5s 0.9s ease-in-out forwards infinite;
+}
+
+.ball-2 {
+    left: 37VW;
+    background-color: aqua;
+    animation: bounce 2.5s 0.3S ease-in-out forwards infinite;
+}
+
+.ball-3 {
+    left: 43VW;
+    background-color: pink;
+    animation: bounce 2.5s 0.6S ease-in-out forwards infinite;
+}
+
+.ball-4 {
+    left: 55VW;
+    background-color: orange;
+    animation: bounce 2.5s 1.2s ease-in-out forwards infinite;
+}
+
+.ball-5 {
+    left: 61VW;
+    animation: bounce 2.5s 1.5s ease-in-out forwards infinite;
+    background-color: green;
+}
+
+
+.frame {
+    width: 30vw;
+    height: 3vh;
+    background-color: brown;
+    top: 70vh;
+    position: absolute;
+    border-radius: 1.5vh;
+    animation: color 5s linear infinite;
+}
+
+
+@keyframes bounce {
+    0% {
+        top: 6vh
+    }
+    
+    50% {
+        top: 67vh
+    }
+    0% {
+        top: 6vh
+    }
+}
+
+
+@keyframes color {
+    5%{background-color: aqua;}
+    20%{background-color: white;}
+    40%{background-color: red;}
+    60%{background-color: yellow;}
+    100%{background-color: green;}
+}
