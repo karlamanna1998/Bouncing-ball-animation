@@ -1,2 +1,2 @@
 # Bouncing-ball-animation
-![alt text](https://github.com/amanna1234/Basic-calculator-using-HTML-Javascript-CSS/blob/main/Final%20outcome.png)
+![alt text](https://github.com/amanna1234/Bouncing-ball-animation/blob/main/Bouncing%20ball%20animation.png)
